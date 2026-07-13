@@ -1,0 +1,88 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+
+cv:
+  name: Jorge Luis Jara Rodriguez
+  location: La Esperanza, Trujillo, Perú
+  email: jorgeluisjhara@gmail.com
+  phone: "+51984415837"
+  photo: "photo_cv.png"
+  social_networks:
+    - network: GitHub
+      username: Yhorx
+  custom_connections:
+    - fontawesome_icon: linkedin
+      placeholder: Jorge Jara
+      url: https://www.linkedin.com/in/jorge-luis-jara-rodriguez-9a2774410/
+  sections:
+    Perfil:
+      - Desarrollador de software Enfocado en aplicaciones de web y Android. He trabajado con Python, Kotlin, Node.js y bases de datos, integrando APIs REST, modelos de IA locales ,despliegue de servicios usando Docker. Busco seguir fortaleciendo mis conocimientos arquitecturas tanto en frontend como backend.
+
+    Educación:
+      - institution: Universidad Privada del Norte
+        area: Ingeniería de Sistemas
+        degree: Estudiante Universitario
+        start_date: 2021-03
+        end_date: present
+        location: Trujillo, Perú
+
+      - institution: Institución Educativa San José
+        area: Educación Primaria y Secundaria
+        degree: Educación Básica
+        start_date: 2008-03
+        end_date: 2019-12
+        location: Perú
+
+    Proyectos:
+      - name: Asistente de IA
+        summary: Nexus IA es un asistente de escritorio basico inspirado en asistentes tipo OpenClaw. Esta desarrollado en Python y permite ejecutar comandos por voz, abrir paginas web, aplicaciones y archivos, enviar mensajes por WhatsApp Web, consultar informacion y realizar preguntas a un modelo local usando Ollama.
+        highlights:
+          - Interfaz grafica de escritorio con Python(tkinter).
+          - Preguntas a un modelo local de Ollama mediante la API
+          - Base de datos local
+
+      - name: Buscador de GIFs con API GIPHY
+        summary: Aplicación web para visualizar y buscar GIFs consumiendo la API de GIPHY.
+        highlights:
+          - Integración de APIs REST.
+          - Interfaz dinámica y responsive.
+          - Manejo de peticiones HTTP y renderizado dinámico.
+
+      - name: Witube
+        summary: Aplicación de android para descargar de videos y audio de youtube.
+        highlights:
+          - Interfaz(UI) hecho con kotlin.
+          - Implementacion del backend haciendo uso de yt-dlp.
+          - Uso de las plataformas docker y render.com para despliegue del backend.
+
+    Habilidades Técnicas:
+      - label: Frontend
+        details: Angular, HTML, CSS, Taildwind, Bootstrap, JavaScript, Typescript, React, Redux
+
+      - label: Backend
+        details: Node.js, Express, Docker, Linux, Python
+
+      - label: Base de Datos
+        details: MongoDB, Mysql, PostgreSql
+
+      - label: Herramientas
+        details: Git, Vscode, Vim, Excel, Word, Powerpoint
+
+    Idiomas:
+      - bullet: Español Nativo
+      - bullet: Inglés Técnico
+
+    Habilidades Blandas:
+      - bullet: Trabajo en equipo
+      - bullet: Resolución de problemas
+      - bullet: Adaptabilidad
+      - bullet: Proactividad
+
+design:
+  theme: engineeringclassic
+  page:
+    size: a4
+  entries:
+    allow_page_break: true
+
+locale:
+  language: spanish
