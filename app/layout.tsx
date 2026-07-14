@@ -9,6 +9,8 @@ import './globals.css'
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
+const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
+
 export const metadata: Metadata = {
   title: 'Jorge Jara',
   description: 'Portfolio especializado en tecnologías web modernas',
@@ -16,20 +18,11 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/icons/icon-light-32x32.png?v=2',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icons/icon-dark-32x32.png?v=2',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg?v=2',
+        url: `${basePath}/icons/code-xml.svg`,
         type: 'image/svg+xml',
-      },
-    ],
-    apple: '/icons/apple-icon.png?v=2',
-  },
+      }
+    ]
+  }
 }
 
 export default function RootLayout({

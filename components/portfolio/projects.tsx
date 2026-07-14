@@ -34,17 +34,17 @@ export function Projects() {
               <p className="text-lg text-muted-foreground mb-6 line-clamp-3">
                 {project.description}
               </p>
-              <div 
+              <div
                 className="relative z-10 w-full h-48 sm:h-56 mb-6 rounded-xl overflow-hidden border border-border bg-black/5 dark:bg-white/5 shadow-lg shadow-black/20 group-hover:shadow-primary/10 transition-all duration-500 cursor-pointer"
                 onClick={() => setSelectedImage(project.image)}
               >
-                <Image 
-                  src={project.image} 
-                  alt={project.title} 
+                <Image
+                  src={project.image}
+                  alt={project.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-contain p-2 group-hover:scale-105 transition-transform duration-700 ease-out" 
-                  loading="lazy" 
+                  className="object-contain p-2 group-hover:scale-105 transition-transform duration-700 ease-out"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
@@ -89,13 +89,13 @@ export function Projects() {
 
       {/* Lightbox Modal */}
       {selectedImage && (
-        <div 
+        <div
           className="fixed inset-0 z-[100] flex items-center justify-center bg-background/90 backdrop-blur-md p-4 animate-in fade-in duration-300"
           onClick={() => setSelectedImage(null)}
         >
           <div className="relative w-full max-w-5xl h-[80vh] flex items-center justify-center">
-            <button 
-              className="absolute -top-12 right-0 md:-right-12 md:top-0 z-[110] p-2 bg-black/50 text-white rounded-full hover:bg-black/70 transition-colors"
+            <button
+              className="absolute -top-12 right-0 md:-right-12 md:top-0 z-110 p-2 bg-black/50 text-white rounded-full hover:bg-black/70 transition-colors"
               onClick={(e) => {
                 e.stopPropagation();
                 setSelectedImage(null);
@@ -105,7 +105,7 @@ export function Projects() {
               <X className="h-6 w-6 md:h-8 md:w-8" />
             </button>
             <div className="relative w-full h-full" onClick={(e) => e.stopPropagation()}>
-              <Image 
+              <Image
                 src={selectedImage}
                 alt="Vista ampliada"
                 fill

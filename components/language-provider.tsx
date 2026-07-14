@@ -70,13 +70,13 @@ const translations: Record<Language, Translations> = {
       title: "Proyectos",
       items: [
         {
-          title: "Nexus IA",
+          title: "Nexus",
           description: "Asistente de escritorio en Python. Permite comandos de voz, uso de WhatsApp Web y consultas a un modelo local usando Ollama.",
           code: "https://github.com/Yhorx/nexus-ia",
           image: `${basePath}/images/nexus.png`
         },
         {
-          title: "Buscador de GIFs",
+          title: "GifApp",
           description: "Aplicación web para visualizar y buscar GIFs consumiendo la API de GIPHY.",
           code: "https://github.com/Yhorx/GifApp",
           url: "https://gif-app-orpin.vercel.app/",
