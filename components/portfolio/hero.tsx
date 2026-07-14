@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Linkedin } from "lucide-react";
+import { ChevronsDown, Github, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { useLanguage } from "@/components/language-provider";
 
@@ -26,7 +26,7 @@ export function Hero() {
     <div className="flex flex-col">
 
       {/* Name Section - Full Screen */}
-      <section className="min-h-screen flex select-none items-center justify-center px-6">
+      <section className="min-h-screen relative flex select-none items-center justify-center px-6">
         <div className="liquid-glass p-12 md:p-24 rounded-[3rem] text-center shadow-2xl flex flex-col items-center">
           <h1
             className="text-6xl md:text-8xl lg:text-9xl font-black text-foreground tracking-tighter mb-8"
@@ -56,6 +56,17 @@ export function Hero() {
               </Link>
             ))}
           </div>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-12 flex flex-col items-center gap-2 delayed-fade-in">
+          <Link 
+            href="#about" 
+            className="text-primary hover:text-primary/80 transition-colors p-2 animate-bounce"
+            aria-label="Scroll down"
+          >
+            <ChevronsDown className="h-10 w-10 pointer-events-none" />
+          </Link>
         </div>
       </section>
     </div>
