@@ -221,16 +221,46 @@
   }
 
   .liquid-glass {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.15); /* Borde sutil oscuro para modo claro */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
   }
 
   .dark .liquid-glass {
     background: rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    /* Borde azulado que combina con el tema primario y las partículas */
+    border: 1px solid rgba(15, 146, 247, 0.3);
+    /* Sombra con un ligero resplandor azul */
+    box-shadow: 0 8px 32px 0 rgba(15, 146, 247, 0.15);
+  }
+
+  .page-intro-animation {
+    animation: page-intro 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  @keyframes page-intro {
+    0% {
+      opacity: 0;
+      transform: scale(0.95) translateY(20px);
+      filter: blur(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+      filter: blur(0);
+    }
+  }
+
+  .delayed-fade-in {
+    opacity: 0;
+    animation: delayed-fade 1s ease-out 1.5s forwards;
+  }
+
+  @keyframes delayed-fade {
+    to {
+      opacity: 1;
+    }
   }
 }

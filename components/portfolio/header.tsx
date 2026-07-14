@@ -18,16 +18,16 @@ export function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 liquid-glass border-b-0 flex justify-center select-none">
+    <header className="fixed top-0 left-0 right-0 z-50 liquid-glass border-b-0 flex justify-center select-none delayed-fade-in">
       <nav className="mx-auto flex max-w-2xl items-center justify-between px-6 py-4">
-        
+
 
         <div className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              className="text-xl text-muted-foreground hover:text-foreground transition-colors"
             >
               {item.name}
             </Link>

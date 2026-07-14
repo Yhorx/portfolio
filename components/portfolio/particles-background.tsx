@@ -32,9 +32,9 @@ export function ParticlesBackground() {
 
     // ── Partícula ──────────────────────────────────────────────
     const BASE_SPEED = 2e-5;
-    const SIZE_BASE = 0.004;
+    const SIZE_BASE = 0.002;
     let activeCount = 0;
-    const MAX_NODES = 30;
+    const MAX_NODES = 15;
 
     class Particle {
       x = 0; y = 0;
@@ -201,7 +201,7 @@ export function ParticlesBackground() {
           const fx = particles[e.from].x, fy = particles[e.from].y;
           const tx = particles[e.to].x, ty = particles[e.to].y;
 
-          ctx.lineWidth = 0.002 * diagonal;
+          ctx.lineWidth = 0.0008 * diagonal;
           ctx.strokeStyle = `rgba(${pr},${pg},${pb},0.69)`;
           ctx.beginPath();
           ctx.moveTo(fx + (tx - fx) * tail, fy + (ty - fy) * tail);
@@ -223,8 +223,8 @@ export function ParticlesBackground() {
 
     // ── Click ──────────────────────────────────────────────────
     const onClick = (e: MouseEvent) => {
-      const target = e.target as HTMLElement;
-      if (target.closest('p, h1, h2, h3, h4, h5, h6, span, a, button')) return;
+      const target = e.target as HTMLElement | SVGElement;
+      if (target.closest('img, p, h1, h2, h3, h4, h5, h6, span, a, button, input, textarea, form, label, svg, path')) return;
 
       const rect = canvas.getBoundingClientRect();
       if (
@@ -271,7 +271,7 @@ export function ParticlesBackground() {
             particles[i].y - particles[j].y
           );
           if (d < linkDist) {
-            ctx.lineWidth = 0.002 * diagonal;
+            ctx.lineWidth = 0.0008 * diagonal;
             ctx.strokeStyle = `rgba(${br},${bg},${bb},${1 - d / linkDist})`;
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);

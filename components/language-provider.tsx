@@ -28,12 +28,19 @@ type Translations = {
     items: {
       title: string;
       description: string;
+      code: string
+      url?: string
+      image: string
     }[];
   };
   contact: {
     title: string;
     description: string;
+    namePlaceholder: string;
+    emailPlaceholder: string;
+    messagePlaceholder: string;
     button: string;
+    successToast: string;
   };
   footer: {
     madeWith: string;
@@ -62,23 +69,34 @@ const translations: Record<Language, Translations> = {
       title: "Proyectos",
       items: [
         {
-          title: "Asistente de IA (Nexus IA)",
+          title: "Nexus IA",
           description: "Asistente de escritorio en Python. Permite comandos de voz, uso de WhatsApp Web y consultas a un modelo local usando Ollama.",
+          code: "https://github.com/Yhorx/nexus-ia",
+          image: "/images/nexus.png"
         },
         {
           title: "Buscador de GIFs",
           description: "Aplicación web para visualizar y buscar GIFs consumiendo la API de GIPHY.",
+          code: "https://github.com/Yhorx/GifApp",
+          url: "https://gif-app-orpin.vercel.app/",
+          image: "/images/gifapp.png"
         },
         {
           title: "Witube",
           description: "Aplicación de Android para descargar videos y audios de YouTube usando yt-dlp.",
+          code: "https://github.com/Yhorx/Witube",
+          image: "/images/witube.png"
         },
       ],
     },
     contact: {
       title: "Contacto",
       description: "Actualmente busco seguir fortaleciendo mis conocimientos en frontend y backend. Si tienes algún proyecto o pregunta, no dudes en escribirme.",
-      button: "Escríbeme",
+      namePlaceholder: "Nombre",
+      emailPlaceholder: "Email",
+      messagePlaceholder: "Escribe tu mensaje",
+      button: "Enviar",
+      successToast: "Enviado",
     },
     footer: {
       madeWith: `© ${date.getFullYear().toString()}`,
@@ -105,23 +123,34 @@ const translations: Record<Language, Translations> = {
       title: "Projects",
       items: [
         {
-          title: "AI Assistant (Nexus IA)",
+          title: "Nexus",
           description: "Desktop assistant in Python. Allows voice commands, WhatsApp Web usage, and queries to a local model using Ollama.",
+          code: "https://github.com/Yhorx/nexus-ia",
+          image: "/images/nexus.png"
         },
         {
-          title: "GIFs Search Engine",
+          title: "GifApp",
           description: "Web application to view and search GIFs consuming the GIPHY API.",
+          code: "https://github.com/Yhorx/GifApp",
+          url: "https://gif-app-orpin.vercel.app/",
+          image: "/images/gifapp.png"
         },
         {
           title: "Witube",
           description: "Android application to download YouTube videos and audio using yt-dlp.",
+          code: "https://github.com/Yhorx/Witube",
+          image: "/images/witube.png"
         },
       ],
     },
     contact: {
       title: "Contact",
       description: "I'm currently looking to strengthen my frontend and backend skills. If you have a project or question, feel free to contact me.",
-      button: "Get in touch",
+      namePlaceholder: "Name",
+      emailPlaceholder: "Email",
+      messagePlaceholder: "Write your message",
+      button: "Send",
+      successToast: "Sent",
     },
     footer: {
       madeWith: `© ${date.getFullYear().toString()}`,
