@@ -10,25 +10,25 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Jorge Jara | Desarrollador Web',
-  description: 'Portafolio de Jorge Jara especializado en tecnologías web modernas',
+  title: 'Jorge Jara',
+  description: 'Portfolio especializado en tecnologías web modernas',
   generator: 'v0.app',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: '/icons/icon-light-32x32.png?v=2',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: '/icons/icon-dark-32x32.png?v=2',
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/icon.svg',
+        url: '/icon.svg?v=2',
         type: 'image/svg+xml',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: '/icons/apple-icon.png?v=2',
   },
 }
 
