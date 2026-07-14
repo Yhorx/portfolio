@@ -4,7 +4,8 @@ import { createContext, useContext, useEffect, useState } from "react";
 
 type Language = "es" | "en";
 
-const date = new Date()
+const date = new Date();
+const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
 
 type Translations = {
   nav: {
@@ -72,20 +73,20 @@ const translations: Record<Language, Translations> = {
           title: "Nexus IA",
           description: "Asistente de escritorio en Python. Permite comandos de voz, uso de WhatsApp Web y consultas a un modelo local usando Ollama.",
           code: "https://github.com/Yhorx/nexus-ia",
-          image: "/images/nexus.png"
+          image: `${basePath}/images/nexus.png`
         },
         {
           title: "Buscador de GIFs",
           description: "Aplicación web para visualizar y buscar GIFs consumiendo la API de GIPHY.",
           code: "https://github.com/Yhorx/GifApp",
           url: "https://gif-app-orpin.vercel.app/",
-          image: "/images/gifapp.png"
+          image: `${basePath}/images/gifapp.png`
         },
         {
           title: "Witube",
           description: "Aplicación de Android para descargar videos y audios de YouTube usando yt-dlp.",
           code: "https://github.com/Yhorx/Witube",
-          image: "/images/witube.png"
+          image: `${basePath}/images/witube.png`
         },
       ],
     },
@@ -126,20 +127,20 @@ const translations: Record<Language, Translations> = {
           title: "Nexus",
           description: "Desktop assistant in Python. Allows voice commands, WhatsApp Web usage, and queries to a local model using Ollama.",
           code: "https://github.com/Yhorx/nexus-ia",
-          image: "/images/nexus.png"
+          image: `${basePath}/images/nexus.png`
         },
         {
           title: "GifApp",
           description: "Web application to view and search GIFs consuming the GIPHY API.",
           code: "https://github.com/Yhorx/GifApp",
           url: "https://gif-app-orpin.vercel.app/",
-          image: "/images/gifapp.png"
+          image: `${basePath}/images/gifapp.png`
         },
         {
           title: "Witube",
           description: "Android application to download YouTube videos and audio using yt-dlp.",
           code: "https://github.com/Yhorx/Witube",
-          image: "/images/witube.png"
+          image: `${basePath}/images/witube.png`
         },
       ],
     },
