@@ -54,7 +54,7 @@ export function Contact() {
         <p className="text-lg md:text-xl text-muted-foreground mb-8">
           {t.contact.description}
           <br />
-          <span className="text-base text-primary font-bold opacity-70">(Destination: jorgeluisjhara@gmail.com)</span>
+          <span className="text-base text-primary font-bold opacity-70">({t.contact.destination}: jorgeluisjhara@gmail.com)</span>
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-4 text-left">

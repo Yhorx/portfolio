@@ -42,6 +42,7 @@ type Translations = {
     messagePlaceholder: string;
     button: string;
     successToast: string;
+    destination: string;
   };
   footer: {
     madeWith: string;
@@ -62,8 +63,8 @@ const translations: Record<Language, Translations> = {
     },
     about: {
       title: "Sobre Mí",
-      p1: "Soy estudiante de Ingeniería de Sistemas en la Universidad Privada del Norte. Me enfoco en desarrollar aplicaciones web y Android, buscando siempre mejorar mis conocimientos en arquitectura frontend y backend.",
-      p2: "He trabajado con Python, Kotlin, Node.js y bases de datos, desarrollando soluciones que integran IA local y APIs REST.",
+      p1: "Soy un Desarrollador de Software enfocado en la creación de aplicaciones web y móviles robustas. Mi experiencia abarca desde el diseño de arquitecturas frontend fluidas hasta la implementación de servicios backend eficientes.",
+      p2: "Me apasiona integrar tecnologías modernas en mis proyectos, desarrollando asistentes de escritorio impulsados por IA local (Ollama), aplicaciones Android (Kotlin) y plataformas web (TypeScript/Angular). Trabajo constantemente para escribir código escalable y optimizado.",
       techTitle: "Tecnologías con las que trabajo:",
     },
     projects: {
@@ -98,6 +99,7 @@ const translations: Record<Language, Translations> = {
       messagePlaceholder: "Escribe tu mensaje",
       button: "Enviar",
       successToast: "Enviado",
+      destination: "Destinatario"
     },
     footer: {
       madeWith: `© ${date.getFullYear().toString()}`,
@@ -116,8 +118,8 @@ const translations: Record<Language, Translations> = {
     },
     about: {
       title: "About Me",
-      p1: "I'm a Systems Engineering student at Universidad Privada del Norte. I focus on developing web and Android applications, always looking to improve my frontend and backend architecture skills.",
-      p2: "I have worked with Python, Kotlin, Node.js, and databases, developing solutions that integrate local AI and REST APIs.",
+      p1: "I am a Software Developer focused on building robust web and mobile applications. My experience ranges from designing smooth frontend architectures to implementing efficient backend services.",
+      p2: "I am passionate about integrating modern technologies into my projects, developing desktop assistants powered by local AI (Ollama), Android applications (Kotlin), and web platforms (TypeScript/Angular). I constantly strive to write scalable and optimized code.",
       techTitle: "Technologies I work with:",
     },
     projects: {
@@ -152,10 +154,12 @@ const translations: Record<Language, Translations> = {
       messagePlaceholder: "Write your message",
       button: "Send",
       successToast: "Sent",
+      destination: "Destination"
     },
     footer: {
       madeWith: `© ${date.getFullYear().toString()}`,
     },
+
   },
 };
 
