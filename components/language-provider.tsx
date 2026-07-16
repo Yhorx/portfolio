@@ -86,8 +86,14 @@ const translations: Record<Language, Translations> = {
         {
           title: "Witube",
           description: "Aplicación de Android para descargar videos y audios de YouTube usando yt-dlp.",
-          code: "https://github.com/Yhorx/Witube",
+          code: "https://github.com/Yhorx/Witube/releases/tag/v1.0.0-alpha",
           image: `${basePath}/images/witube.png`
+        },
+        {
+          title: "Centinela",
+          description: "Centinela es una aplicación diseñada para automatizar la gestión y el seguimiento de las finanzas personales.(En desarrollo)",
+          code: "https://github.com/Yhorx/Centinela",
+          image: `${basePath}/images/centinela.png`
         },
       ],
     },
@@ -141,8 +147,14 @@ const translations: Record<Language, Translations> = {
         {
           title: "Witube",
           description: "Android application to download YouTube videos and audio using yt-dlp.",
-          code: "https://github.com/Yhorx/Witube",
+          code: "https://github.com/Yhorx/Witube/releases/tag/v1.0.0-alpha",
           image: `${basePath}/images/witube.png`
+        },
+        {
+          title: "Centinela",
+          description: "Centinela is a mobile application designed to automate the management and tracking of personal finances.(in development)",
+          code: "https://github.com/Yhorx/Centinela",
+          image: `${basePath}/images/centinela.png`
         },
       ],
     },

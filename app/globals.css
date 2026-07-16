@@ -237,7 +237,7 @@
   }
 
   .page-intro-animation {
-    animation: page-intro 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation: page-intro 1.2s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   @keyframes page-intro {
@@ -248,8 +248,8 @@
     }
     100% {
       opacity: 1;
-      transform: scale(1) translateY(0);
-      filter: blur(0);
+      transform: none;
+      filter: none;
     }
   }
 

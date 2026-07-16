@@ -31,7 +31,7 @@ export function Projects() {
               <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
                 {project.title}
               </h3>
-              <p className="text-lg text-muted-foreground mb-6 line-clamp-3">
+              <p className="text-lg text-muted-foreground mb-6">
                 {project.description}
               </p>
               <div
