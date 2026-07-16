@@ -91,7 +91,7 @@ const translations: Record<Language, Translations> = {
         },
         {
           title: "Centinela",
-          description: "Centinela es una aplicación diseñada para automatizar la gestión y el seguimiento de las finanzas personales.(En desarrollo)",
+          description: "Centinela es una aplicación diseñada para automatizar la gestión y el seguimiento de las finanzas personales atraves de notificacion push.(En desarrollo)",
           code: "https://github.com/Yhorx/Centinela",
           image: `${basePath}/images/centinela.png`
         },
@@ -152,7 +152,7 @@ const translations: Record<Language, Translations> = {
         },
         {
           title: "Centinela",
-          description: "Centinela is a mobile application designed to automate the management and tracking of personal finances.(in development)",
+          description: "Centinela is a mobile application designed to automate the management and tracking of personal finances via push notifications.(in development)",
           code: "https://github.com/Yhorx/Centinela",
           image: `${basePath}/images/centinela.png`
         },
