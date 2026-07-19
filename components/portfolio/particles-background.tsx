@@ -174,7 +174,7 @@ export function ParticlesBackground() {
             particles[e.from].y - particles[e.to].y
           );
           // Velocidad proporcional a la diagonal (igual que el original)
-          e.progress += 5e-4 * diagonal * dt;
+          e.progress += 4e-4 * diagonal * dt;
 
           if (e.progress >= d) {
             this.edges.splice(i, 1);

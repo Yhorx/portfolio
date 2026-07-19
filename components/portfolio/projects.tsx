@@ -8,8 +8,8 @@ import { useState } from "react";
 
 const projectTech = [
   ["Python", "Tkinter", "Ollama"],
-  ["TypesScript", "Angular", "GIPHY API"],
-  ["Kotlin", "Docker", "Render"],
+  ["TypesScript", "Angular", "Boostrap"],
+  ["Kotlin", "Docker", "Express"],
 ];
 
 export function Projects() {
@@ -46,7 +46,7 @@ export function Projects() {
                   className="object-contain p-2 group-hover:scale-105 transition-transform duration-700 ease-out"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-linear-to-t from-background/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
               <div className="flex items-center justify-between mt-auto mb-6">
                 <div className="flex flex-wrap gap-2">
@@ -90,7 +90,7 @@ export function Projects() {
       {/* Lightbox Modal */}
       {selectedImage && (
         <div
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-background/90 backdrop-blur-md p-4 animate-in fade-in duration-300"
+          className="fixed inset-0 z-100 flex items-center justify-center bg-background/90 backdrop-blur-md p-4 animate-in fade-in duration-300"
           onClick={() => setSelectedImage(null)}
         >
           <div className="relative w-full max-w-5xl h-[80vh] flex items-center justify-center">

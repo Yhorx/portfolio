@@ -10,14 +10,6 @@ interface UrlSkills {
 
 const skills: UrlSkills[] = [
   {
-    name: "Firebase",
-    url: "https://firebase.google.com/docs?hl=es-419",
-  },
-  {
-    name: "JavaScript",
-    url: "https://developer.mozilla.org/docs/Web/JavaScript",
-  },
-  {
     name: "TypeScript",
     url: "https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html",
   },
@@ -34,12 +26,16 @@ const skills: UrlSkills[] = [
     url: "https://developer.mozilla.org/docs/Web",
   },
   {
-    name: "Tailwind CSS",
-    url: "https://tailwindcss.com/docs/installation/using-vite",
+    name: "Postgres",
+    url: "https://www.postgresql.org/docs/",
   },
   {
-    name: "Node.js",
-    url: "https://nodejs.org/",
+    name: "Docker",
+    url: "https://docs.docker.com/get-started/docker-overview/",
+  },
+  {
+    name: "Express",
+    url: "https://expressjs.com/en/5x/starter/hello-world/",
   },
   {
     name: "Git",
@@ -52,6 +48,10 @@ const skills: UrlSkills[] = [
   {
     name: "Python",
     url: "https://www.python.org/doc/",
+  },
+  {
+    name: "Kotlin",
+    url: "https://kotlinlang.org/docs/home.html",
   },
 ];
 
@@ -79,7 +79,7 @@ export function About() {
               <a
                 key={skill.name}
                 href={skill.url}
-                className="px-3 py-1 text-xs font-mono text-primary bg-primary/10 border border-primary/20 rounded-full"
+                className="px-3 py-1 text-sm hover:scale-110 transition duration-200 ease-in-out font-mono text-primary bg-primary/10 border border-primary/20 rounded-full"
               >
                 {skill.name}
               </a>

@@ -43,6 +43,7 @@ type Translations = {
     button: string;
     successToast: string;
     destination: string;
+    captchaRequiredToast: string
   };
   footer: {
     madeWith: string;
@@ -105,7 +106,8 @@ const translations: Record<Language, Translations> = {
       messagePlaceholder: "Escribe tu mensaje",
       button: "Enviar",
       successToast: "Enviado",
-      destination: "Destinatario"
+      destination: "Destinatario",
+      captchaRequiredToast: "Completa el captcha antes de enviar."
     },
     footer: {
       madeWith: `© ${date.getFullYear().toString()}`,
@@ -166,7 +168,8 @@ const translations: Record<Language, Translations> = {
       messagePlaceholder: "Write your message",
       button: "Send",
       successToast: "Sent",
-      destination: "Destination"
+      destination: "Destination",
+      captchaRequiredToast: "Complete the captcha before submitting."
     },
     footer: {
       madeWith: `© ${date.getFullYear().toString()}`,
